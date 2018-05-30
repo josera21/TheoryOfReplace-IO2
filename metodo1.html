@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Metodo 1</title>
+  <link rel="stylesheet" href="styles/bootstrap.css">
+  <link rel="stylesheet" href="styles/cover.css">
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/metodo1.js"></script>
+</head>
+<body>
+	<header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Modelos de Reemplazo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Metodo 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Metodo 2</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <h1 class="text-center text-primary">Analisis de funciones continuas</h1>
+  	  <div class="row">
+        <div class="col-md-6">
+          
+            <h2>DATOS</h2>
+            <div class="form-group">
+              <label for="formGroupExampleInput">Inversion inicial</label>
+              <input type="text" class="form-control" id="I" placeholder="I">
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Costo de Op. en el primer año</label>
+              <input type="text" class="form-control" id="Co" placeholder="Co">
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Costo de Mant. en el primer año</label>
+              <input type="text" class="form-control" id="Cm" placeholder="Cm">
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Costo de Op. por periodo</label>
+              <input type="text" class="form-control" id="O" placeholder="O">
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Costo de Mant. por periodo</label>
+              <input type="text" class="form-control" id="M" placeholder="M">
+            </div>
+            <div class="form-group">
+              <button class="btn btn-success" id="cal">Calcular</button>
+              <buttton class="btn btn-warning">
+                <a style="text-decoration: none; color: white;" href="index.html">Volver</a>
+              </buttton>
+            </div>
+          
+        </div>
+        <div class="col-md-6" style="margin-top: 5em;">
+          <h3 id="n" class="text-primary">n* = </h3>
+          <h3 id="ctp" class="text-primary">CTP* = </h3>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
